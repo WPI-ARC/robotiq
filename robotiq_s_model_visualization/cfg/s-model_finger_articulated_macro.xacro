@@ -83,18 +83,20 @@ finger(i.e. finger_1, etc...).
 		</link>
 		<link name="${prefix}link_3">
 			<visual>
-				<origin xyz="0.075 0.03 0" rpy="0 0 0.52"/>
+				<origin xyz="0 -0.0025 0.015" rpy="1.57079632679 1.57079632679 0.52"/>
 				<geometry>
 					<!-- <mesh filename="package://robotiq_s_model_visualization/meshes/s-model_articulated/visual/link_3.STL" /> -->
-					<box size="0.15 0.03 0.03" />
+					<mesh filename="package://robotiq_s_model_visualization/meshes/s-model_articulated/visual/extensions.STL" />
+					<!-- <box size="0.15 0.03 0.03" /> -->
 				</geometry>
 				<material name="green"/>
 			</visual>
 			<collision>
-				<origin xyz="0.075 0.03 0" rpy="0 0 0.52"/>
+				<origin xyz="0 -0.0025 0.015" rpy="1.57079632679 1.57079632679 0.52"/>
 				<geometry>
 					<!-- <mesh filename="package://robotiq_s_model_visualization/meshes/s-model_articulated/collision/link_3.STL" /> -->
-					<box size="0.15 0.03 0.03" />
+					<mesh filename="package://robotiq_s_model_visualization/meshes/s-model_articulated/visual/extensions.STL" />
+					<!-- <box size="0.15 0.03 0.03" /> -->
 				</geometry>
 				<material name="yellow"/>
 			</collision>
@@ -156,7 +158,7 @@ finger(i.e. finger_1, etc...).
 		<joint name="${prefix}joint_3_tip" type="fixed">
 			<parent link="${prefix}link_3"/>
 			<child link="${prefix}link_3_tip"/>
-			<origin xyz="0.15 0.09 0" rpy="0 0 0"/>
+			<origin xyz="0.12 0.06 0" rpy="0 0 0"/>
 		</joint>
 		<!-- end of joint list -->
 
