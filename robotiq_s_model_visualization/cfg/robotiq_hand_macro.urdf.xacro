@@ -116,14 +116,16 @@ there are multiple hands then a prefix followed by an "_" is needed.
       <visual>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://robotiq_s_model_visualization/meshes/s-model_articulated/visual/link_3.STL" />
+          <!-- <mesh filename="package://robotiq_s_model_visualization/meshes/s-model_articulated/visual/link_3.STL" /> -->
+          <box size="1 1 1" />
         </geometry>
         <material name="green"/>
       </visual>
       <collision>
         <origin xyz="0 0 0" rpy="0 0 0"/>
         <geometry>
-          <mesh filename="package://robotiq_s_model_visualization/meshes/s-model_articulated/collision/link_3.STL"/>
+          <!-- <mesh filename="package://robotiq_s_model_visualization/meshes/s-model_articulated/collision/link_3.STL"/> -->
+          <box size="1 1 1" />
         </geometry>
         <material name="yellow"/>
       </collision>
