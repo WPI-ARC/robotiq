@@ -108,7 +108,7 @@ finger(i.e. finger_1, etc...).
 		</link>
 		<link name="${prefix}link_3_tip">
 			<visual>
-				<origin xyz="0 0 0" rpy="0 0 0.52"/>
+				<origin xyz="0 0.01 -0.015" rpy="1.57079632679 0 0.52"/>
 				<geometry>
 					<mesh filename="package://robotiq_s_model_visualization/meshes/s-model_articulated/visual/fingers.STL" />
 				</geometry>
@@ -117,7 +117,7 @@ finger(i.e. finger_1, etc...).
 			<collision>
 				<origin xyz="0 0 0" rpy="0 0 0.52"/>
 				<geometry>
-					<mesh filename="package://robotiq_s_model_visualization/meshes/s-model_articulated/collision/fingers.STL" />
+					<mesh filename="package://robotiq_s_model_visualization/meshes/s-model_articulated/visual/fingers.STL" />
 				</geometry>
 				<material name="yellow"/>
 			</collision>
