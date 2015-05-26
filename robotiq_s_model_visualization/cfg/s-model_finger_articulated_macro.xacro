@@ -115,7 +115,7 @@ finger(i.e. finger_1, etc...).
 				<material name="green"/>
 			</visual>
 			<collision>
-				<origin xyz="0 0 0" rpy="0 0 0.52"/>
+				<origin xyz="0 0.01 -0.015" rpy="1.57079632679 0 0.52"/>
 				<geometry>
 					<mesh filename="package://robotiq_s_model_visualization/meshes/s-model_articulated/visual/fingers.STL" />
 				</geometry>
